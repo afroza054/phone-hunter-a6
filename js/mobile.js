@@ -60,8 +60,9 @@ console.log(phones);
         <div class="card" style="width:18rem">
         <img src="${phone.image?phone.image:'Image not found'}" class="card-img-top" alt="...."/>
            <div class="card-body">
-           <h5 class="card-title">Brand: ${phone.brand?phone.brand:'Brand not found'}</h5>
-           <h5 class="card-title"> Model Name: ${phone.phone_name?phone.phone_name:'Model not found'}</h5>
+           <h4 class="card-title"> Model Name: ${phone.phone_name?phone.phone_name:'Model not found'}</h4>
+           <h4 class="card-title">Brand: ${phone.brand?phone.brand:'Brand not found'}</h4>
+           
            <button onclick="loadDetailByName('${phone.slug?phone.slug:"not found"}')" data-bs-target="#modal-details" 
            data-bs-toggle="modal" href="#" class="btn btn-success">Details</button>
            </div>
