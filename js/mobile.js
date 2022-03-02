@@ -126,7 +126,7 @@ const displayDetailByIdName=phones=>{
              
             </div>
             <div class="modal-body">
-            <img src="${phones.image? phones.image:'Image not found'}" class="card-img-top" alt="...."/>
+            <img src="${phones.image? phones.image:'Image not found'}" class="card-img-top" height=300px width=300px alt="...."/>
             <p class="modal-title"><b>Brand Name</b>: ${phones.brand? phones.brand:'Brand not found'}</p>
               <p class="card-text"><b>Model</b>: ${phones.name? phones.name:'Model not found'}</p>
               
@@ -138,14 +138,7 @@ const displayDetailByIdName=phones=>{
             <b>Memory</b>: ${phones.mainFeatures?.memory? phones.mainFeatures.memory:'Memory not Found'}</br>
               </p>
               <p class="card-text"><b>Sensor</b> : ${phones.sensors? phones.sensors:'Sensor not Found'}</p>
-               <p><b>Others:</b></br>  
-             <b>WLAN</b>:  ${phones.others?.WLAN? phones.others.WLAN:'WLAN not Found'}</br>
-             <b class="semi-bold">Bluetooth</b>:  ${phones.others?.Bluetooth? phones.others.Bluetooth:'Bluetooth not Found'}</br>
-             <b>GPS</b>: ${phones.others?.GPS? phones.others.GPS:'GPS not Found'}</br>
-             <b>NFC</b>: ${phones.others?.NFC? phones.others.NFC:'NFC not Found'}</br>
-             <b>Radio</b>:  ${phones.others?.Radio? phones.others.Radio:'Radio  not Found'}</br>
-             <b>USB</b>:  ${phones.others?.USB? phones.others.USB:'USB not Found'}</br>
-               </p>
+               
             </div>
             <div class="modal-footer">
               <button
