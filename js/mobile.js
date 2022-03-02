@@ -63,7 +63,7 @@ console.log(phones);
            <h5 class="card-title">Brand: ${phone.brand?phone.brand:'Brand not found'}</h5>
            <h5 class="card-title"> Model Name: ${phone.phone_name?phone.phone_name:'Model not found'}</h5>
            <button onclick="loadDetailByName('${phone.slug?phone.slug:"not found"}')" data-bs-target="#modal-details" 
-           data-bs-toggle="modal" href="#" class="btn btn-primary">See Details</button>
+           data-bs-toggle="modal" href="#" class="btn btn-success">Details</button>
            </div>
         </div>
         `;
@@ -149,14 +149,12 @@ const displayDetailByIdName=phones=>{
             <div class="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-primary"
                 data-bs-dismiss="modal"
               >
                 Close
               </button>
-              <a type="button" href="${'#'}" class="btn btn-primary">
-                See Video
-              </a>
+              
             </div>
           </div>
           </div>
